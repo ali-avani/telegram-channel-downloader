@@ -1,5 +1,6 @@
 import argparse
 import asyncio
+import mimetypes
 import os
 import pickle
 from pathlib import Path
@@ -115,7 +116,12 @@ async def main():
             print("Downloading:", message.id)
             message = await client.get_messages(CHANNEL_ID, ids=message.id)
             file = message.document or message.photo
-            filename = f"{message.id}_{file.attributes[0].file_name.replace(' ', '_')}"
+            original_filename = getattr(
+                file.attributes[0],
+                "file_name",
+                f"{file.id}{mimetypes.guess_extension(file.mime_type)}",
+            ).replace(" ", "_")
+            filename = f"{message.id}_{original_filename}"
             filepath_prefix = f"{MEDIA_PATH}/{filename}"
             await client.download_media(
                 message,
