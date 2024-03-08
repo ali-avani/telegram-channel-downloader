@@ -12,7 +12,7 @@ Download the scripts:
 
 ```
 git clone https://github.com/ali-avani/telegram-channel-downloader.git
-cd telegram-channel-media-cloner
+cd telegram-channel-downloader
 ```
 
 Edit configuration:
