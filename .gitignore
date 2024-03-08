@@ -1,0 +1,6 @@
+.venv
+venv
+tcmc_session*
+.env
+saved_medias*
+medias/*
