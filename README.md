@@ -1,4 +1,4 @@
-# Shekan Installer
+# Installer
 
 Python script to download all of media from a Telegram channel in order of upload with extra features.
 
