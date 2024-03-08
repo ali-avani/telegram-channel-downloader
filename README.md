@@ -1,6 +1,6 @@
 # Shekan Installer
 
-Python script to download all of media from private Telegram channel and upload them to custom channel.
+Python script to download all of media from a Telegram channel in order of upload with extra features.
 
 ## Getting Started
 
@@ -11,7 +11,7 @@ Go to [link](https://my.telegram.org/) and create an app. Then get your `api_id`
 Download the scripts:
 
 ```
-git clone https://github.com/ali-avani/telegram-channel-media-cloner.git
+git clone https://github.com/ali-avani/telegram-channel-downloader.git
 cd telegram-channel-media-cloner
 ```
 
